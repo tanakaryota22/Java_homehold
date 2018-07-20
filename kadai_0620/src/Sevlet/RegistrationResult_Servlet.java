@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class RegistationResult_Servlet
+ * Servlet implementation class RegistrationResult_Servlet
  */
-@WebServlet("/RegistationResult_Servlet")
-public class RegistationResult_Servlet extends HttpServlet {
+@WebServlet("/RegistrationResult_Servlet")
+public class RegistrationResult_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public RegistationResult_Servlet() {
+    public RegistrationResult_Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,11 +30,11 @@ public class RegistationResult_Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-
 		String view = "/WEB-INF/view/Registrationresult.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 		dispatcher.forward(request,response);
 	}
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
