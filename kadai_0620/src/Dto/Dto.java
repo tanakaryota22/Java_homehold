@@ -1,31 +1,58 @@
 package Dto;
 
 	public class Dto {
-		private String income; // 収入
-		private String spending; // 支出
+		 private int id;
+		    private String name;
+		    private int price;
+		    private int day;
+
+
 
 	public Dto(){
-	}
-		public Dto(String income, String spending) {
 		super();
-		this.income = income;
-		this.spending = spending;
 }
+		  public Dto(int id,String name,int price,int day){
+		        this.id = id;
+		        this.name = name;
+		        this.price = price;
+		        this.day = day;
 
-	public String getincome() {
-		return income;
-	}
-
-	public void setincome(String income) {
-		this.income = income;
-	}
-
-	public String getspending() {
-		return spending;
-	}
-
-	public void setSpending(String spending) {
-		this.spending= spending;
 
 	}
+	 public int getId() {
+	        return id;
+	    }
+
+
+	    public void setId(int id) {
+	        this.id = id;
+	    }
+
+
+	    public String getName() {
+	        return name;
+	    }
+
+
+	    public void setName(String name) {
+	        this.name = name;
+	    }
+
+
+	    public int getPrice() {
+	        return price;
+	    }
+
+
+	    public void setPrice(int price) {
+	        this.price = price;
+	    }
+	    public int getDay() {
+	        return day;
+	    }
+
+
+	    public void setDay(int day) {
+	        this.day = day;
+	    }
 	}

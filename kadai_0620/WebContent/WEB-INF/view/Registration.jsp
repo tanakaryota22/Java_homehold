@@ -8,12 +8,15 @@
 </head>
 <body>
 
-<form action="/kdai_0622/RegistrationResultServlet" method="get">
+<form action="/kadai_0620/RegistrationResult_Servlet" method="get">
 
-	収入   : <input type="text" name = "name"><br>
-	支出   : <input type="password" name = "pass"><br>
 
-	<input type="submit" value="送信">
+
+			    id:<input type="text" name="id"><br>
+	      name:<input type="text" name="name"><br>
+	      price:<input type="text" name="price"><br>
+	  day:<input type="text" name="day"><br>
+	<input type="submit" value="登録">
 
 
 

@@ -30,9 +30,10 @@ public class Registration_Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		String view = "/WEB-INF/view/Registrationresult.jsp";
+		String view = "/WEB-INF/view/Registration.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 		dispatcher.forward(request,response);
+
 	}
 
 	/**
