@@ -11,7 +11,7 @@
 		<%
 		request.setCharacterEncoding("UTF-8");
 
-		Dto list = (Dto)request.getAttribute("parameter");
+		Dto d = (Dto)request.getAttribute("Dto");
 %>
 <a>登録しました。</a>
 </body>

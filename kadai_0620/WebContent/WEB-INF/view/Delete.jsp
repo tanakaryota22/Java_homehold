@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>削除</title>
 </head>
 <body>
 
-<form action="/ksdai_0620/DeleteResult_Servlet" method="get">
+<form action="/kadai_0620/Delete_Result_Servlet" method="get">
 	ID:<input type="text" name="id">
 	<input type="submit" value="削除">
 	</form>

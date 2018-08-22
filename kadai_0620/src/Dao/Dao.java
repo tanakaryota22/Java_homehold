@@ -28,7 +28,7 @@ public class Dao{
 					"tanaka",
 					"tanakapass");
 
-            String sql = "select * from kakeibo where id = (?);";
+            String sql = "select * from kakeibo where id = ?;";
 
 
         	pstmt = con.prepareStatement(sql);
@@ -38,14 +38,13 @@ public class Dao{
 			rs = pstmt.executeQuery();
             rs.next();
 
-            while(rs.next() == true ){
+
             int id = rs.getInt("id");
             String name = rs.getString("name");
             int price = rs.getInt("price");
             int day = rs.getInt("day");
 
             dto = new Dto(id,name,price,day);
-            }
 
         } catch (ClassNotFoundException e) {
             System.out.println("JDBCドライバが見つかりません。");
@@ -83,8 +82,8 @@ public class Dao{
         return dto;
     }
 
-    	public static ArrayList<Dto> add(int id, String name, int price, int day){
-    		ArrayList<Dto> resultList = new ArrayList<Dto>();
+    public static void Add(Dto d ){
+
 
         Connection con = null;
         PreparedStatement pstmt = null;
@@ -101,6 +100,13 @@ public class Dao{
             String sql = "insert into kakeibo values(?,?,?,?);";
 
             pstmt = con.prepareStatement(sql);
+
+
+            int id = d.getDay();
+            String name = d.getName();
+            int price = d.getPrice();
+            int day = d.getDay();
+
 
 
             pstmt.setInt(1, id);
@@ -140,9 +146,9 @@ public class Dao{
             } catch (SQLException e){
                 System.out.println("DB切断時にエラーが発生しました。");
                 e.printStackTrace();
+
             }
-			return resultList;
-        }
+    }
 
     public static void Delete(int idkey){
 
@@ -206,6 +212,16 @@ public class Dao{
     }
 
 	public static void Registration(int id, String name, int price, int day) {
+		// TODO 自動生成されたメソッド・スタブ
+
+	}
+
+	public static ArrayList<Dto> SearchAll() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+
+	public static void Add(int id, String name, int price, int day) {
 		// TODO 自動生成されたメソッド・スタブ
 
 	}

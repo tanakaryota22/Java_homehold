@@ -12,10 +12,10 @@
 
 
 
-			    id:<input type="text" name="id"><br>
+		    id:<input type="text" name="id"><br>
 	      name:<input type="text" name="name"><br>
-	      price:<input type="text" name="price"><br>
-	  day:<input type="text" name="day"><br>
+	     price:<input type="text" name="price"><br>
+	       day:<input type="text" name="day"><br>
 	<input type="submit" value="登録">
 
 

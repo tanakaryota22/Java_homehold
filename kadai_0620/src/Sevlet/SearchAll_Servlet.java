@@ -1,6 +1,7 @@
 package Sevlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,18 +13,17 @@ import javax.servlet.http.HttpServletResponse;
 import Dao.Dao;
 import Dto.Dto;
 
-
 /**
- * Servlet implementation class RegistrationResult_Servlet
+ * Servlet implementation class SearchAll_Servlet
  */
-@WebServlet("/RegistrationResult_Servlet")
-public class RegistrationResult_Servlet extends HttpServlet {
+@WebServlet("/SearchAll_Servlet")
+public class SearchAll_Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public RegistrationResult_Servlet() {
+    public SearchAll_Servlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,24 +35,12 @@ public class RegistrationResult_Servlet extends HttpServlet {
 		// TODO Auto-generated method stub
 
 		request.setCharacterEncoding("UTF-8");
-		String id  = request.getParameter("id");
-		int ID = Integer.parseInt(id);
-		String NAME = request.getParameter("name");
-		String price = request.getParameter("price");
-		int Price = Integer.parseInt(price);
-		String day  = request.getParameter("day");
-		int Day = Integer.parseInt(day);
+		ArrayList<Dto> list = Dao.SearchAll();
+		request.setAttribute("param", list);
 
-
-		Dto d = new Dto(ID,NAME,Price,Day);
-
-		Dao.Add(d);
-
-
-
-		String view = "/WEB-INF/view/RegistrationResult.jsp";
+		String view = "/WEB-INF/view/SearchAll.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-		dispatcher.forward(request,response);
+		dispatcher.forward(request, response);
 	}
 
 
