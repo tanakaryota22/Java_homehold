@@ -15,14 +15,14 @@
 	ArrayList<Dto> list = (ArrayList<Dto>)request.getAttribute("param");
 	%>
 
-<p>
-
+<p>
 	<%for(int a=0; a<list.size(); a++){ %><br>
 
-		<%=list.get(a).getId() %><br>
-		<%=list.get(a).getName() %><br>
-		<%=list.get(a).getPrice() %><br>
-		<%=list.get(a).getDay() %></p>
+	<a>id    :</a>	 <%=list.get(a).getId() %><br>
+	<a>name  :</a>	 <%=list.get(a).getName() %><br>
+	<a>price :</a> <%=list.get(a).getPrice() %><br>
+	<a>day   :</a>	 <%=list.get(a).getDay() %></p>
+
 <%} %>
 
 

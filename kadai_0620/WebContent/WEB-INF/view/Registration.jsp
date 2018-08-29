@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>登録</title>
 </head>
 <body>
 
@@ -19,6 +19,10 @@
 	<input type="submit" value="登録">
 
 
+<br>
+<a href="/kadai_0620/Search_Servlet">検索</a>
+<br>
+<a href="/kadai_0620/Delete_Servlet">削除</a>
 
 
 	</form>

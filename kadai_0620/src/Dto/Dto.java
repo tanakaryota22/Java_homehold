@@ -8,9 +8,6 @@ package Dto;
 
 
 
-	public Dto(){
-		super();
-}
 		  public Dto(int id,String name,int price,int day){
 		        this.id = id;
 		        this.name = name;
@@ -19,7 +16,10 @@ package Dto;
 
 
 	}
-	 public int getId() {
+	 public Dto() {
+			// TODO 自動生成されたコンストラクター・スタブ
+		}
+	public int getId() {
 	        return id;
 	    }
 

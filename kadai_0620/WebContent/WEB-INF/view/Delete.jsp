@@ -14,5 +14,10 @@
 	<input type="submit" value="削除">
 	</form>
 
+<br>
+<a href="/kadai_0620/Registration_Servlet">登録</a><br>
+<a href="/kadai_0620/Search_Servlet">検索</a>
+
+
 </body>
 </html>

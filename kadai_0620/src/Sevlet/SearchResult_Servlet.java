@@ -37,7 +37,7 @@ public class SearchResult_Servlet extends HttpServlet {
 		int idkey = Integer.parseInt(id);
 		Dto result = Dao.Search(idkey);
 
-		request.setAttribute("Dto", result);
+		request.setAttribute("parameter", result);
 
 		String view = "/WEB-INF/view/SearchResult.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);

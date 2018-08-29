@@ -39,12 +39,12 @@ public class RegistrationResult_Servlet extends HttpServlet {
 		int ID = Integer.parseInt(id);
 		String NAME = request.getParameter("name");
 		String price = request.getParameter("price");
-		int Price = Integer.parseInt(price);
+		int PRICE = Integer.parseInt(price);
 		String day  = request.getParameter("day");
-		int Day = Integer.parseInt(day);
+		int DAY = Integer.parseInt(day);
 
 
-		Dto d = new Dto(ID,NAME,Price,Day);
+		Dto d = new Dto(ID,NAME,PRICE,DAY);
 
 		Dao.Add(d);
 

@@ -9,11 +9,11 @@
 </head>
 <body>
 
-<form action="/kadai_0620/SearchResult_Servlet" method="get">
+<form action="/kadai_0620/SearchResult_Servlet" method="post">
 
 
 
-        <input type="text" name="key"><br><br>
+        <input type="text" name="id"><br><br>
         <input type="submit" value="検索"><br><br>
     </form>
 
